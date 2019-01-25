@@ -8,7 +8,6 @@ env:
     - LUA=luajit2.1  # current head of 2.1 branch
 
 before_install:
-  - source .travis/setenv_lua.sh
   - pip install --user cpp-coveralls
   - luarocks install Lua-cURL         --server=https://luarocks.org/dev
   - luarocks install luacov-coveralls --server=https://luarocks.org/dev
